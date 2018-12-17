@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReserveSeatsConfirmActivity">
+
+    <Button
+        android:id="@+id/rsConfirmButton"
+        android:layout_width="213dp"
+        android:layout_height="63dp"
+        android:text="Confirm"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/rsTextView4"
+        android:layout_width="212dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="63dp"
+        android:text="Reserve Seats"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/caResTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="178dp"
+        android:layout_height="58dp"
+        android:text="Order Details"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="358dp"
+        android:layout_height="189dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReserveSeatsActivity">
+
+    <TextView
+        android:id="@+id/rsTextView"
+        android:layout_width="185dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="37dp"
+        android:text="Reserve Seats"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/rsDeparturePlainText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/rsDeparturePlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Departure City"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/rsArrivalPlainText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsTextView" />
+
+    <EditText
+        android:id="@+id/rsArrivalPlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Arrival City"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/rsNumTicketsPlainText"
+        app:layout_constraintStart_toStartOf="@+id/rsDeparturePlainText"
+        app:layout_constraintTop_toBottomOf="@+id/rsDeparturePlainText" />
+
+    <EditText
+        android:id="@+id/rsNumTicketsPlainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Number of tickets"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/rsFlightsButton"
+        app:layout_constraintStart_toStartOf="@+id/rsFlightsButton"
+        app:layout_constraintTop_toBottomOf="@+id/rsArrivalPlainText" />
+
+    <Button
+        android:id="@+id/rsFlightsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="105dp"
+        android:text="Check Flights"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsNumTicketsPlainText" />
+
+</android.support.constraint.ConstraintLayout>
